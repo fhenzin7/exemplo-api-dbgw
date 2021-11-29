@@ -1,0 +1,9 @@
+GET https://8080-red-gorilla-g16nso87.ws-us17.gitpod.io/filmes
+
+###
+POST https://8080-red-gorilla-g16nso87.ws-us17.gitpod.io/filmes
+Content-Type: application/json
+
+{
+    "titulo" : "Exemplo"
+}
