@@ -1,9 +1,28 @@
-GET https://8080-red-gorilla-g16nso87.ws-us17.gitpod.io/filmes
+@url = https://8080-magenta-dormouse-4quoblpj.ws-us21.gitpod.io
 
 ###
-POST https://8080-red-gorilla-g16nso87.ws-us17.gitpod.io/filmes
+GET {{url}}/filmes
+
+###
+POST {{url}}/filmes
 Content-Type: application/json
 
 {
     "titulo" : "Exemplo"
+}
+
+###
+PUT {{url}}/filmes/4
+Content-Type: application/json
+
+{
+    "titulo" : "Ghostbusters"
+}
+
+###
+DELETE {{url}}/filmes
+Content-Type: application/json
+
+{
+    "id" : 4
 }
